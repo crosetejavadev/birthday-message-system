@@ -1,10 +1,10 @@
 ## Birthday Message System
 
-### Prerequisites
+### Prerequisites 
 - Node.js 18+
 
 ### Setup
-1. Create `.env` at repo root with:
+1. Created `.env` at repo root with:
 ```
 PORT=3000
 DATABASE_PATH=./data/app.db
@@ -12,7 +12,7 @@ HOOKBIN_URL=<your_hookbin_url>
 SCHEDULER_INTERVAL_MS=60000
 RECOVERY_LOOKBACK_HOURS=30
 ```
-2. Install deps:
+2. Install dependencies:
 ```
 npm i
 ```
@@ -43,8 +43,8 @@ npm run build && npm start
 { "id": "<uuid>" }
 ```
 
-### Test end-to-end with your webhook URL (Windows Command Prompt)
-1. Ensure your `.env` has your webhook URL:
+### Tested end-to-end with webhook URL 
+1. Added webhook URL in `.env`:
 ```
 HOOKBIN_URL=https://eok9v3s5eix1emd.m.pipedream.net
 ```
@@ -96,4 +96,3 @@ npm test
 ### Notes
 - Uses SQLite (`better-sqlite3`) with WAL for concurrency; safe upserts avoid duplicates.
 - Extendable to other occasions by adding new generators and messages.
-
